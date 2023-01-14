@@ -31,17 +31,19 @@ public class Application
 		}
 		else
 		{
+			System.out.println("Verkeerde waarde.");
 			System.exit(0);
 		}
 
 
 		System.out.print("Voer prijs in: ");
-		if(scanner.hasNextInt())
+		if(scanner.hasNextDouble())
 		{
-			web.prijs = scanner.nextInt();
+			web.prijs = scanner.nextDouble();
 		}
 		else
 		{
+			System.out.println("Verkeerde waarde.");
 			System.exit(0);
 		}
 
@@ -53,6 +55,7 @@ public class Application
 		}
 		else
 		{
+			System.out.println("Verkeerde waarde.");
 			System.exit(0);
 		}
 
@@ -90,6 +93,13 @@ public class Application
 			System.exit(0);
 		}
 		
+
+		System.out.println("De klant heet: " + klant.naam);
+		System.out.println("De klant is " + web.getKlantLeeftijd() + " jaar oud");
+		System.out.println("De klant koopt: " + web.item);
+		System.out.println("De " + web.item + " is " + web.prijs +" euro");
+		System.out.println("Het " + web.item + " is uitverkocht? " + web.isUitverkocht());
+		System.out.println("De winkel is schoon? " + web.isWinkelIsSchoon());
 
 
 		/*

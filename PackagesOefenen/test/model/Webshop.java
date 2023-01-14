@@ -1,6 +1,6 @@
 package test.model;
 
-import working.spirit.code.Person;
+//import working.spirit.code.Person;
 
 public class Webshop 
 {

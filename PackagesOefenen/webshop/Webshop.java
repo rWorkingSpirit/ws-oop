@@ -6,7 +6,7 @@ public class Webshop
 	private Klant guppie;
 	private int klantLeeftijd = 4;
 	
-	public int prijs;
+	public double prijs;
 	public String item;
 
 	boolean uitverkocht;
@@ -31,6 +31,7 @@ public class Webshop
 		}
 		else
 		{
+			System.out.println("Verkeerde waarde.");
 			System.exit(0);
 		}
 		
@@ -67,12 +68,13 @@ public class Webshop
 		}
 		else
 		{
+			System.out.println("Verkeerde waarde.");
 			System.exit(0);
 		}
 		
 	}
 
-	public boolean isWinkelIsSchool()
+	public boolean isWinkelIsSchoon()
 	{
 		return winkelIsSchoon;
 	}
@@ -85,9 +87,9 @@ public class Webshop
 		}
 		else
 		{
+			System.out.println("Verkeerde waarde.");
 			System.exit(0);
 		}
-		this.winkelIsSchoon = winkelIsSchoon;
 	}
 
 	
